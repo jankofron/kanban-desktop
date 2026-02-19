@@ -8,7 +8,7 @@ url="https://github.com/jankofron/kanban-desktop"
 license=('MIT')
 depends=('electron' 'hicolor-icon-theme' 'libappindicator-gtk3')
 makedepends=('nodejs' 'npm' 'asar' 'git')
-source=("${pkgname}-${pkgver}.tar.gz::file://./v${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/jankofron/kanban-desktop/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('SKIP')  # set real sum
 
 # App install dir (where we put app.asar and resources)
