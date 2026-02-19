@@ -1,0 +1,17 @@
+{
+  "name": "kanban-desktop",
+  "author": "Jan Kofroň",
+  "description": "Electron-based CryptPad Kanban board app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron-store": "^11.0.2"
+  },
+  "devDependencies": {
+    "electron": "^38.8.2"
+  }
+}
