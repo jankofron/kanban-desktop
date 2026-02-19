@@ -1,6 +1,6 @@
 # Maintainer: Jan Kofron <jan.kofron@gmail.com>
 pkgname=kanban-desktop
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 pkgdesc="Single-board CryptPad Kanban wrapper (Electron) with tray and window restore"
 arch=('x86_64')

@@ -21,3 +21,9 @@ Example `~/.config/kanban.conf`:
 # Personal board
 https://cryptpad.arch-linux.cz/kanban/b/your-board-id
 ```
+
+## Workspace Restore (XFCE)
+
+- On Linux, the app stores the last virtual desktop/workspace where the window was visible.
+- On next launch, it restores the window to that workspace.
+- Restore uses `wmctrl` first, with fallbacks to `xdotool` and `xprop`.
