@@ -1,12 +1,12 @@
 # Maintainer: Jan Kofron <jan.kofron@gmail.com>
 pkgname=kanban-desktop
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Single-board CryptPad Kanban wrapper (Electron) with tray and window restore"
 arch=('x86_64')
 url="https://github.com/jankofron/kanban-desktop"
 license=('MIT')
-depends=('electron' 'hicolor-icon-theme' 'libappindicator-gtk3')
+depends=('electron42' 'hicolor-icon-theme' 'libappindicator-gtk3')
 makedepends=('nodejs' 'npm' 'asar' 'git')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/jankofron/kanban-desktop/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('SKIP')  # set real sum
@@ -36,7 +36,7 @@ package() {
   # Desktop launcher uses system electron to run our asar
   install -Dm755 /dev/stdin "${pkgdir}/usr/bin/${pkgname}" <<'EOF'
 #!/bin/sh
-exec /usr/bin/electron /usr/lib/kanban-desktop/app.asar "$@"
+exec /usr/bin/electron42 /usr/lib/kanban-desktop/app.asar "$@"
 EOF
 
   # .desktop file

@@ -5,6 +5,9 @@
   "version": "1.0.0",
   "main": "main.js",
   "private": true,
+  "allowScripts": {
+    "electron": true
+  },
   "scripts": {
     "start": "electron ."
   },
@@ -12,6 +15,6 @@
     "electron-store": "^11.0.2"
   },
   "devDependencies": {
-    "electron": "^43.1.0"
+    "electron": "^42.8.1"
   }
 }
